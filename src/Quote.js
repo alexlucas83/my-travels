@@ -1,13 +1,13 @@
 import React from "react";
 
-const Quote = ({ quote, character, image }) => (
-  <figure>
-    <img src={image} alt={character} />
-    <figcaption>
-      <blockquote>{quote}</blockquote>
-      <cite>{character}</cite>
-    </figcaption>
-  </figure>
+const Quote = ({ destination, country, photo, distance }) => (
+    <div>
+    <img src={photo} alt={destination}/>
+    <h1>{destination}</h1>
+    <p>{distance}</p>
+    <p>{country}</p>
+    
+    </div>
 );
 
 export default Quote;
